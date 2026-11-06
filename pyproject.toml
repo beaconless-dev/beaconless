@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beaconless"
+version = "0.1.0"
+description = "Typed Python client for the Beaconless telemetry API"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Beaconless Maintainers" }]
+keywords = ["telemetry", "api-client", "events", "ingest", "sdk"]
+dependencies = ["requests>=2.28"]
+
+[project.urls]
+Documentation = "https://beaconless-api.pages.dev/api-reference"
+Source = "https://github.com/beaconless-dev/beaconless"
+
+[tool.hatch.build.targets.wheel]
+packages = ["beaconless"]
